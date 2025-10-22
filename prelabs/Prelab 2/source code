@@ -1,0 +1,29 @@
+/**
+ * Prelab 2
+ * 9/1/2025
+ * Simone Marta
+ * 
+ * Problem: Accept input of four integers, then perform and output various calculations using them. Use the C programming language
+ * 
+ * Solution: I used scanf, int, various operators, and the "%d" format specifier
+ * 
+ * Reference: Used w3schools' description of scanf function to inform my methodology
+ */
+#include <stdio.h>
+
+int main()
+{
+    int A, B, C, D;
+    printf("Enter four integers (A, B, C, and D), separated by spaces\n");
+    scanf("%d %d %d %d", &A, &B, &C, &D);
+    
+    printf("Values:\nA: %d \nB: %d \nC: %d \nD: %d\n\n",A,B,C,D);
+    
+    printf("Sum of B and C: %d\n",B+C);
+    printf("Product of A and D: %d\n",A*D);
+    printf("Integer quotient of A over C: %d\n", A/C); //if I didn't want the integer quotient, I would cast A or C to a double
+    printf("Integer remainder of C over D: %d\n", C%D);
+    printf("A times C over B plus D (using integer division): %d\n", (A*C)/(B+D));
+
+    return 0;
+}
